@@ -11,5 +11,51 @@
 			"$2"
 		],
 		"description": "Log output to console"
+	},
+
+	"try and catch": {
+		"prefix": "tc",
+		"body": [
+			"try {",
+			"",
+			"} catch (${1:err}) {",
+			"",
+			"}"
+		],
+		"description": "Try and catch blocks"
+	},
+
+	"class": {
+		"prefix": "class",
+		"body": [
+			"class MyClass {",
+			"	constructor(data) {",
+			"		this.data = data;",
+			"	}",
+			"}",
+			"",
+			"let c1 = new MyClass('123')"
+
+		],
+		"description": "class blocks"
+	},
+
+	"ternary operator": {
+		"prefix": "ter",
+		"body": [
+			"myVar = varTemp ? '$2' : '$3'"
+		],
+		"description": "ternary operator"
+	},
+
+	"array": {
+		"prefix": "arr",
+		"body": [
+			"let ${1:myArray} = [${2:myValue}]"
+		],
+		"description": "empty array"
 	}
+
+
+
 }
